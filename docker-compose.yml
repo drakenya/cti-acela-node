@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+    node:
+        image: node:18
+        command: tail -F anything
+        volumes:
+            - .:/app
+
+    rabbit:
+        image: rabbitmq
