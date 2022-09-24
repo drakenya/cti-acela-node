@@ -1,4 +1,4 @@
-import {rabbit, rabbitPublisher, PublishFn, QUEUE_ACELA_TO_NETWORK} from "../rabbit";
+import {rabbit, rabbitPublisher, PublishFn, QUEUE_ACELA_TO_NETWORK} from "../connection/rabbit";
 import {factoryCreateCommand} from "./messages";
 
 async function asyncConsumeMessage(publish: PublishFn) {
