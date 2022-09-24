@@ -9,3 +9,6 @@ services:
 
     rabbit:
         image: rabbitmq
+
+    redis:
+        image: redis
