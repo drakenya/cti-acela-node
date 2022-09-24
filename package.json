@@ -9,7 +9,7 @@
     "nodemon": "^2.0.20"
   },
   "scripts": {
-    "dev:insert": "npx ts-node insert.ts",
-    "dev:worker": "nodemon worker.ts"
+    "dev:acela:inserter-to-network": "npx ts-node acela/to_network_message_inserter.ts",
+    "dev:acela:worker-to-network": "nodemon acela/to_network_worker.ts"
   }
 }

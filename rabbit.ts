@@ -1,5 +1,8 @@
 import { connect, Connection, Channel } from 'amqplib';
 
+export const QUEUE_ACELA_TO_NETWORK = 'acela.to_network';
+export const QUEUE_ACELA_FROM_NETWORK = 'acela.from_network';
+
 export interface PublishFn<T = any> {
     (event: string, data: any): Promise<T>
 };
